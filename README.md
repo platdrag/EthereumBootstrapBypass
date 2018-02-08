@@ -33,12 +33,11 @@ iptables -A OUTPUT -d 5.1.83.226 -j DROP
 
 `./geth`
 
-Now you can view the Geth logs and view there's no progress with after initial init. 
-Now lets watch iptables and see geth attempts to send packets and gets blocked:
+Geth does not progress after initial init. Now lets watch iptables and confirm that geth attempts to send packets and gets blocked:
 
 `watch -n 2 -d iptables -nvL`
 
-If we fire up wireshark we can see that behind the scene it periodically trying to reach the bootstrap ips and fails:
+![iptables blocking ips](https://github.com/platdrag/EthereumBootstrapBypass/blob/master/img/iptables.gif?raw=true)
 
 ### What can be done?
 
