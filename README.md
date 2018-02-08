@@ -1,5 +1,7 @@
-# EthereumBootstrapBypass
-A censorship bypass for Ethereum's single point of failure bootstap nodes gets blocked
+# Ethereum Bootstrap Bypass
+
+
+**A censorship bypass for Ethereum's single point of failure bootstap nodes gets blocked**
 
 
 Ethereum's wire protocol is built on [DevP2p](https://github.com/ethereum/wiki/wiki/%C3%90%CE%9EVp2p-Wire-Protocol) over [RPLx](https://github.com/ethereum/devp2p/blob/master/rlpx.md), a cryptographic peer-to-peer network and protocol suite. 
