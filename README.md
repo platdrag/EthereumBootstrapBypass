@@ -6,7 +6,7 @@
 
 Ethereum's wire protocol is built on [DevP2p](https://github.com/ethereum/wiki/wiki/%C3%90%CE%9EVp2p-Wire-Protocol) over [RPLx](https://github.com/ethereum/devp2p/blob/master/rlpx.md), a cryptographic peer-to-peer network and protocol suite. 
 
-uses bootstrap nodes in order to initial the p2p network by getting you the first nodes to connect to. 
+The protocol is using bootstrap nodes to initialize the p2p network by getting you the first nodes to connect to. 
 Node discovery and network formation are implemented via a kademlia-like UDP. For bootstrap, each client uses built in bootstrap nodes which indicates the node to other nodes available to connect to.
 
 Bootstrap nodes are embedded in the ethereum clients. For [Geth](https://github.com/ethereum/go-ethereum/tree/b4e05adcc7c40e7f77839bad350df625094940ed), there are 6 ip addresses [hard coded](https://github.com/ethereum/go-ethereum/blob/b4e05adcc7c40e7f77839bad350df625094940ed/params/bootnodes.go) into the binary.
